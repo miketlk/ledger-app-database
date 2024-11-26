@@ -275,11 +275,6 @@
     "curve": ["ed25519"],
     "path": ["44'/1338'"]
   },
-  "IoTeX": {
-    "appFlags": {"nanos": "0x200", "nanos2": "0x200", "nanox": "0x200"},
-    "appName": "IoTeX",
-    "path": ["44'/304'"]
-  },
   "KAR": {
     "appFlags": {"nanos": "0x000", "nanos2": "0x000", "nanox": "0x200", "stax": "0x200"},
     "appName": "Karura",
@@ -548,7 +543,7 @@
     "path": ["44'/5757'", "5757'", "888'/0'", "44'/1'"]
   },
   "SXP": {
-    "appFlags": {"nanos": "0x000", "nanos2": "0x000", "nanox": "0x200"},
+    "appFlags": {"flex": "0x200", "nanos2": "0x000", "nanox": "0x200", "stax": "0x200"},
     "appName": "Solar",
     "curve": ["secp256k1"],
     "path": ["44'/3333'", "44'/1'"]
@@ -564,6 +559,12 @@
     "appName": "TON",
     "curve": ["ed25519"],
     "path": ["44'/607'"]
+  },
+  "UM": {
+    "appFlags": {"flex": "0x200", "nanos2": "0x000", "nanox": "0x200", "stax": "0x200"},
+    "appName": "Penumbra",
+    "curve": ["secp256k1"],
+    "path": ["44'/6532'"]
   },
   "WEST": {
     "appFlags": {"nanos": "0x000", "nanos2": "0x000", "nanox": "0x200"},
@@ -621,13 +622,13 @@
     "appFlags": {"flex": "0xa10", "nanos2": "0xa10", "nanox": "0xa10", "stax": "0xa10"},
     "appName": "Acre",
     "curve": ["secp256k1"],
-    "path": ["44'/0'", "44'/1'", "48'/0'", "48'/1'", "49'/0'", "49'/1'", "84'/0'", "84'/1'", "86'/0'", "86'/1'"]
+    "path": [null]
   },
   "acre_testnet": {
     "appFlags": {"flex": "0xa10", "nanos2": "0xa10", "nanox": "0xa10", "stax": "0xa10"},
     "appName": "Acre Test",
     "curve": ["secp256k1"],
-    "path": ["44'/0'", "44'/1'", "48'/0'", "48'/1'", "49'/0'", "49'/1'", "84'/0'", "84'/1'", "86'/0'", "86'/1'"]
+    "path": [null]
   },
   "aeternity": {
     "appFlags": {"nanos": "0x240", "nanos2": "0x240", "nanox": "0x240"},
@@ -824,7 +825,7 @@
     "path": ["45'", "44'/820'", "44'/1'"]
   },
   "cardano_ada": {
-    "appFlags": {"flex": "0x200", "nanos": "0x200", "nanos2": "0x200", "nanox": "0x200", "stax": "0x200"},
+    "appFlags": {"flex": "0xa00", "nanos": "0x200", "nanos2": "0xa00", "nanox": "0xa00", "stax": "0xa00"},
     "appName": "Cardano ADA",
     "curve": ["ed25519"],
     "path": ["44'/1815'", "1852'/1815'", "1853'/1815'", "1854'/1815'", "1855'/1815'", "1694'/1815'"]
@@ -872,8 +873,9 @@
     "path": ["1105'/0'"]
   },
   "conflux": {
-    "appFlags": {"nanos": "0x000", "nanos2": "0x000", "nanox": "0x200"},
+    "appFlags": {"flex": "0x200", "nanos2": "0x000", "nanox": "0x200", "stax": "0x200"},
     "appName": "Conflux",
+    "curve": ["secp256k1"],
     "path": ["44'/503'"]
   },
   "constellation": {
@@ -1218,6 +1220,18 @@
     "appFlags": {"nanos": "0x240", "nanos2": "0x240", "nanox": "0x240"},
     "appName": "IOTA Legacy",
     "path": ["44'/4218'"]
+  },
+  "iota_rebased": {
+    "appFlags": {"nanos": "0x000", "nanos2": "0x000", "nanox": "0x200"},
+    "appName": "IOTA Rebased",
+    "curve": ["ed25519"],
+    "path": ["44'/1'", "44'/4218'"]
+  },
+  "iotex": {
+    "appFlags": {"flex": "0xa40", "nanos": "0xa40", "nanos2": "0xa40", "nanox": "0xa40", "stax": "0xa40"},
+    "appName": "IoTeX",
+    "curve": ["secp256k1"],
+    "path": ["44'/304'", "45'", "44'/1'"]
   },
   "ironfish-dkg": {
     "appFlags": {"flex": "0x200", "nanos": "0x000", "nanos2": "0x000", "nanox": "0x200", "stax": "0x200"},
